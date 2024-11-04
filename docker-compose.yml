@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  streamlit_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/app/data
+      - ./punkti:/app/punkti
+    environment:
+      - PYTHONUNBUFFERED=1
+
