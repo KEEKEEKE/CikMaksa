@@ -1,0 +1,6 @@
+title=Cik man par to jāmaksā?
+menu_label=Ko es gribu zināt:
+selection_message=tu izvēlējies: {item} :sunglasses:
+intro_text=_Jūs daļu naudas atdodat valstij, lai mēs visi dzīvotu labāk, uzziniet, kā šī nauda tiek tērēta..._ 
+footer_text=Šī vietne izmanto datus tikai no atklātajiem avotiem: data.gov.lv data.stat.gov.lv sam.gov.lv
+
