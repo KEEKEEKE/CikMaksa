@@ -20,6 +20,11 @@ def load_labels(file_path):
 menu_items = load_menu_items("data/menu_items.txt")
 labels = load_labels("data/labels.txt")
 
+
+# st.set_page_config(page_title='XYZ', layout = 'wide', page_icon = 'logo2.png', initial_sidebar_state = 'auto')
+st.set_page_config(page_title=labels["title"])
+
+
 # Создание макета с колонками для заголовка и изображения
 col1, col2 = st.columns([3, 1])
 
@@ -29,7 +34,7 @@ with col1:
 
 # В правой колонке — изображение
 with col2:
-    st.image("data/image.jpg", use_column_width=True)
+    st.image("data/image.jpg", use_container_width=True)
 
 # Отображение вступительного текста
 st.write(labels["intro_text"])

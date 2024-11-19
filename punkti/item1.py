@@ -14,7 +14,10 @@ def show_chart():
         df.set_index("Year", inplace=True)
 
         # Строим график с областями
-        st.area_chart(df[["Total budget", "Budget deficit"]])
+        # st.area_chart(df[["Total budget", "Budget deficit"]])
+        st.bar_chart(df[["Total budget", "Budget deficit"]], color=["#ffa200", "#d0e9f5"])
+        st.dataframe(df)
+
     else:
         st.write("Файл данных должен содержать колонки 'Year', 'Total budget' и 'Budget deficit'.")
 
